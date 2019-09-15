@@ -3,6 +3,8 @@ const app = express();
 const hbs = require('hbs');
 require('./hbs/helpers');
 
+const port = process.env.port || 8080;
+
 //Permite hacer la dirección localhost:puerto/public como el contenido estatico y publico del servidor
 //Es decir si se entra a la url localhost:puerto buscará la carpeta index de la carpeta public
 app.use(express.static(__dirname + '/public'));
@@ -26,6 +28,6 @@ app.get('/about', (req, res) => {
     res.render('about');
 })
 
-app.listen(8080, () => {
-    console.log('Escuchando desde el puerto 8080');
+app.listen(port, () => {
+    console.log(`Escuchando desde el puerto ${port}`);
 });
