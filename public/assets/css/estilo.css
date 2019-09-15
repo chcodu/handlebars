@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+    max-width: 100%;
+}
+
+footer {
+    margin-top: 100px;
+    width: 100%;
+    padding: 15px;
+    background: #343A40;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+}
+
+.imgOP {
+    width: 100%;
+}
